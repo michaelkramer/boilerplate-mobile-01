@@ -1,24 +1,27 @@
 {
+  "version": "1.0.0",
+  "name": "boilerplate-mobile-01",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "start": "npm run start -w frontend",
+    "lint": "npm run lint -w frontend",
+    "test-frontend": "npm run test -w frontend"
+  },
   "dependencies": {
-    "expo": "^46.0.0",
-    "react": "18.0.0",
-    "react-dom": "18.0.0",
-    "react-native": "0.69.4",
-    "react-native-web": "~0.18.7"
+    "commander": "^9.4.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.18.6",
-    "@types/react": "~18.0.0",
-    "@types/react-native": "~0.69.1",
-    "typescript": "^4.6.3"
-  },
-  "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web"
-  },
-  "version": "1.0.0",
-  "private": true,
-  "name": "boilerplate-mobile-"
+    "@types/lodash": "^4.14.184",
+    "@typescript-eslint/parser": "5.35.1",
+    "eslint": "8.22.0",
+    "eslint-config-airbnb-typescript": "17.0.0",
+    "eslint-config-react-app": "7.0.1",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-jest": "26.8.7",
+    "typescript": "4.8.2"
+  }
 }

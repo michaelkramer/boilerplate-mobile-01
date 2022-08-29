@@ -61,4 +61,13 @@ buck-out/
 
 # Expo
 .expo/*
+/**/.expo
 web-build/
+
+# production
+/build
+/**/build
+/dist
+/**/dist
+/release
+/**/release
